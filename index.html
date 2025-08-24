@@ -107,19 +107,25 @@
       <div class="space-y-3 mb-8 w-full">
         <h2 class="text-xl sm:text-2xl font-semibold text-gray-900 mb-4 lg:mb-6 fade-in stagger-3">Meus Serviços</h2>
         <button onclick="openService('portfolio')" class="service-btn w-full font-medium py-3 sm:py-4 px-4 sm:px-6 rounded-xl text-left flex items-center justify-between fade-in stagger-4">
-          <span class="text-base sm:text-lg">📸 Photography Portfolio</span>
+          <span class="text-base sm:text-lg">📸 Edição de Fotos Preview</span>
           <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
           </svg>
         </button>
         <button onclick="openService('video')" class="service-btn w-full font-medium py-3 sm:py-4 px-4 sm:px-6 rounded-xl text-left flex items-center justify-between fade-in stagger-5">
-          <span class="text-base sm:text-lg">🎬 Video Editing Samples</span>
+          <span class="text-base sm:text-lg">🎬 Edição de Vídeo Preview</span>
           <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
           </svg>
         </button>
         <button onclick="openService('traffic')" class="service-btn w-full font-medium py-3 sm:py-4 px-4 sm:px-6 rounded-xl text-left flex items-center justify-between fade-in stagger-6">
-          <span class="text-base sm:text-lg">📊 Paid Traffic Campaigns</span>
+          <span class="text-base sm:text-lg">📊 Estratégia Digital</span>
+          <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+        <button onclick="openService('traffic')" class="service-btn w-full font-medium py-3 sm:py-4 px-4 sm:px-6 rounded-xl text-left flex items-center justify-between fade-in stagger-6">
+          <span class="text-base sm:text-lg">📊 Campanha de Tráfego Pago</span>
           <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
           </svg>
@@ -154,19 +160,31 @@
       <div class="space-y-3 mb-6">
         <h2 class="text-lg sm:text-xl font-semibold text-gray-900 mb-2 sm:mb-4 fade-in stagger-3">Meus Serviços</h2>
         <button onclick="openService('portfolio')" class="service-btn w-full font-medium py-3 px-4 rounded-xl text-left flex items-center justify-between fade-in stagger-4">
-          <span class="text-sm sm:text-base">📸 Photography Portfolio</span>
+          <span class="text-sm sm:text-base">📸 Portfolio de Fotografia</span>
           <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
           </svg>
         </button>
         <button onclick="openService('video')" class="service-btn w-full font-medium py-3 px-4 rounded-xl text-left flex items-center justify-between fade-in stagger-5">
-          <span class="text-sm sm:text-base">🎬 Video Editing Samples</span>
+          <span class="text-sm sm:text-base">🎬 Edição de Vídeo Preview</span>
           <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
           </svg>
         </button>
         <button onclick="openService('traffic')" class="service-btn w-full font-medium py-3 px-4 rounded-xl text-left flex items-center justify-between fade-in stagger-6">
-          <span class="text-sm sm:text-base">📊 Paid Traffic Campaigns</span>
+          <span class="text-sm sm:text-base">📊 Edição de Fotos Preview</span>
+          <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+        <button onclick="openService('traffic')" class="service-btn w-full font-medium py-3 px-4 rounded-xl text-left flex items-center justify-between fade-in stagger-6">
+          <span class="text-sm sm:text-base">📊 Estratégia Digital</span>
+          <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+        <button onclick="openService('traffic')" class="service-btn w-full font-medium py-3 px-4 rounded-xl text-left flex items-center justify-between fade-in stagger-6">
+          <span class="text-sm sm:text-base">📊 Campanhas de Tráfego Pago</span>
           <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
           </svg>
@@ -200,6 +218,7 @@
             const services = {
                 portfolio: 'https://example.com/portfolio',
                 video: 'https://example.com/video-samples',
+                estrategia: 'https://example.com/traffic-campaigns',
                 traffic: 'https://example.com/traffic-campaigns'
             };
             
@@ -209,17 +228,17 @@
         
         function openWhatsApp() {
             // Replace with your actual WhatsApp number
-            const phoneNumber = '1234567890';
-            const message = 'Hi! I found your link-in-bio page and would like to discuss your services.';
+            const phoneNumber = '5549988424754';
+            const message = 'Olá! Encontrei seu perfil no link da bio e gostaria de saber mais sobre seu serviço.';
             const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank');
         }
         
         function openEmail() {
             // Replace with your actual email
-            const email = 'alex@example.com';
+            const email = 'joao.oliveira0@outlook.com';
             const subject = 'Inquiry from Link-in-Bio';
-            const body = 'Hi Alex, I found your link-in-bio page and would like to discuss your services.';
+            const body = 'Olá! Encontrei seu perfil no link da bio e gostaria de saber mais sobre seu serviço.';
             const emailUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
             window.open(emailUrl, '_blank');
         }
