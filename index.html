@@ -1,1 +1,246 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Guilherme - Creative Professional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-image: url('https://res.cloudinary.com/duk5infgc/image/upload/v1755987997/IMG_2670_copiar_hh6drd.jpg');
+            background-size: cover;           /* Faz a imagem cobrir toda a tela */
+            background-position: center;      /* Centraliza a imagem */
+            background-repeat: no-repeat;     /* Evita repetição */
+            background-attachment: fixed;     /* Fixa o fundo ao rolar */
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+        
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-btn {
+            transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            background: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+            color: #1d1d1f;
+        }
+        
+        .service-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1);
+            background: #f9f9f9;
+        }
+        
+        .contact-btn {
+            transition: all 0.3s ease;
+        }
+        
+        .contact-btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .whatsapp-btn {
+            background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+        }
+        
+        .email-btn {
+            background: linear-gradient(135deg, #ea4335 0%, #d33b2c 100%);
+        }
+        
+        .profile-image {
+            background: linear-gradient(135deg, #e9ecef 0%, #f8f9fa 100%);
+            padding: 4px;
+            border-radius: 50%;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .stagger-1 { animation-delay: 0.1s; }
+        .stagger-2 { animation-delay: 0.2s; }
+        .stagger-3 { animation-delay: 0.3s; }
+        .stagger-4 { animation-delay: 0.4s; }
+        .stagger-5 { animation-delay: 0.5s; }
+        .stagger-6 { animation-delay: 0.6s; }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center lg:justify-start bg-fixed">
+  <div class="w-full max-w-full px-2 py-4 sm:px-4 sm:py-8 lg:max-w-xl lg:ml-12 glass-effect rounded-2xl shadow-lg opacity-100">
+    <!-- Desktop Layout -->
+    <div class="hidden lg:flex flex-col items-center justify-center w-full">
+      <!-- Header -->
+      <div class="text-center lg:text-left mb-8 fade-in stagger-1">
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-2 lg:mb-4">João Guilherme</h1>
+        <p class="text-lg sm:text-xl text-gray-600 font-light">Creative Professional</p>
+      </div>
+      <!-- Bio -->
+      <div class="glass-effect rounded-2xl p-4 sm:p-6 mb-8 fade-in stagger-2">
+        <p class="text-gray-700 leading-relaxed text-base sm:text-lg">
+          Desenvolvedor apaixonado por tecnologia, inovação e soluções criativas. Sempre em busca de novos desafios e aprendizados.
+        </p>
+      </div>
+      <!-- Services -->
+      <div class="space-y-3 mb-8 w-full">
+        <h2 class="text-xl sm:text-2xl font-semibold text-gray-900 mb-4 lg:mb-6 fade-in stagger-3">Meus Serviços</h2>
+        <button onclick="openService('portfolio')" class="service-btn w-full font-medium py-3 sm:py-4 px-4 sm:px-6 rounded-xl text-left flex items-center justify-between fade-in stagger-4">
+          <span class="text-base sm:text-lg">📸 Edição de Fotos Preview</span>
+          <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+        <button onclick="openService('video')" class="service-btn w-full font-medium py-3 sm:py-4 px-4 sm:px-6 rounded-xl text-left flex items-center justify-between fade-in stagger-5">
+          <span class="text-base sm:text-lg">🎬 Edição de Vídeo Preview</span>
+          <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+        <button onclick="openService('traffic')" class="service-btn w-full font-medium py-3 sm:py-4 px-4 sm:px-6 rounded-xl text-left flex items-center justify-between fade-in stagger-6">
+          <span class="text-base sm:text-lg">📊 Estratégia Digital</span>
+          <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+        <button onclick="openService('traffic')" class="service-btn w-full font-medium py-3 sm:py-4 px-4 sm:px-6 rounded-xl text-left flex items-center justify-between fade-in stagger-6">
+          <span class="text-base sm:text-lg">📊 Campanha de Tráfego Pago</span>
+          <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+      <!-- Contact Buttons -->
+      <div class="grid grid-cols-2 gap-4 w-full">
+        <button onclick="openWhatsApp()" class="contact-btn whatsapp-btn text-white font-medium py-3 sm:py-4 px-4 sm:px-6 rounded-xl flex items-center justify-center space-x-2 fade-in stagger-5">
+          <span>💬</span>
+          <span class="text-base sm:text-lg">WhatsApp</span>
+        </button>
+        <button onclick="openEmail()" class="contact-btn email-btn text-white font-medium py-3 sm:py-4 px-4 sm:px-6 rounded-xl flex items-center justify-center space-x-2 fade-in stagger-6">
+          <span>✉️</span>
+          <span class="text-base sm:text-lg">Email</span>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile/Tablet Layout -->
+    <div class="lg:hidden max-w-md mx-auto">
+      <!-- Header -->
+      <div class="text-center mb-6 fade-in stagger-1">
+        <h1 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">João Guilherme</h1>
+        <p class="text-base sm:text-lg text-gray-600 font-light">Creative Professional</p>
+      </div>
+      <!-- Bio -->
+      <div class="glass-effect rounded-2xl p-4 sm:p-6 mb-6 fade-in stagger-2">
+        <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
+          Desenvolvedor apaixonado por tecnologia, inovação e soluções criativas. Sempre em busca de novos desafios e aprendizados.
+        </p>
+      </div>
+      <!-- Services -->
+      <div class="space-y-3 mb-6">
+        <h2 class="text-lg sm:text-xl font-semibold text-gray-900 mb-2 sm:mb-4 fade-in stagger-3">Meus Serviços</h2>
+        <button onclick="openService('portfolio')" class="service-btn w-full font-medium py-3 px-4 rounded-xl text-left flex items-center justify-between fade-in stagger-4">
+          <span class="text-sm sm:text-base">📸 Portfolio de Fotografia</span>
+          <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+        <button onclick="openService('video')" class="service-btn w-full font-medium py-3 px-4 rounded-xl text-left flex items-center justify-between fade-in stagger-5">
+          <span class="text-sm sm:text-base">🎬 Edição de Vídeo Preview</span>
+          <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+        <button onclick="openService('traffic')" class="service-btn w-full font-medium py-3 px-4 rounded-xl text-left flex items-center justify-between fade-in stagger-6">
+          <span class="text-sm sm:text-base">📊 Edição de Fotos Preview</span>
+          <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+        <button onclick="openService('traffic')" class="service-btn w-full font-medium py-3 px-4 rounded-xl text-left flex items-center justify-between fade-in stagger-6">
+          <span class="text-sm sm:text-base">📊 Estratégia Digital</span>
+          <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+        <button onclick="openService('traffic')" class="service-btn w-full font-medium py-3 px-4 rounded-xl text-left flex items-center justify-between fade-in stagger-6">
+          <span class="text-sm sm:text-base">📊 Campanhas de Tráfego Pago</span>
+          <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+      <!-- Contact Buttons -->
+      <div class="grid grid-cols-2 gap-3 mb-6">
+        <button onclick="openWhatsApp()" class="contact-btn whatsapp-btn text-white font-medium py-3 px-4 rounded-xl flex items-center justify-center space-x-2 fade-in stagger-5">
+          <span>💬</span>
+          <span class="text-sm sm:text-base">WhatsApp</span>
+        </button>
+        <button onclick="openEmail()" class="contact-btn email-btn text-white font-medium py-3 px-4 rounded-xl flex items-center justify-center space-x-2 fade-in stagger-6">
+          <span>✉️</span>
+          <span class="text-sm sm:text-base">Email</span>
+        </button>
+      </div>
+      <!-- Profile Image - Mobile (at bottom) -->
+      <div class="flex justify-center fade-in stagger-2">
+        <div class="profile-image">
+          <img
+            src="https://res.cloudinary.com/duk5infgc/image/upload/v1755996926/IMG_2629_copiar_mn3ram.jpg"
+            alt="João Guilherme"
+            class="w-24 h-24 sm:w-32 sm:h-32 object-cover rounded-full"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+    <script>
+        function openService(service) {
+            const services = {
+                portfolio: 'https://example.com/portfolio',
+                video: 'https://example.com/video-samples',
+                estrategia: 'https://example.com/traffic-campaigns',
+                traffic: 'https://example.com/traffic-campaigns'
+            };
+            
+            // In a real implementation, you would replace these with actual URLs
+            alert(`Opening ${service} page. In a real site, this would navigate to: ${services[service]}`);
+        }
+        
+        function openWhatsApp() {
+            // Replace with your actual WhatsApp number
+            const phoneNumber = '5549988424754';
+            const message = 'Olá! Encontrei seu perfil no link da bio e gostaria de saber mais sobre seu serviço.';
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+        
+        function openEmail() {
+            // Replace with your actual email
+            const email = 'joao.oliveira0@outlook.com';
+            const subject = 'Inquiry from Link-in-Bio';
+            const body = 'Olá! Encontrei seu perfil no link da bio e gostaria de saber mais sobre seu serviço.';
+            const emailUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            window.open(emailUrl, '_blank');
+        }
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'973c981e931f167d',t:'MTc1NTk3MjkxNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
